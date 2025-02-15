@@ -168,6 +168,7 @@
             color: #fff;
             font-weight: bold;
             transition: background-color 0.3s ease;
+            font-size: 16px; /* Увеличиваем размер шрифта для кнопок */
         }
 
         .button.primary {
@@ -275,12 +276,13 @@
                 font-size: 16px;
             }
 
-            .features-grid {
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Уменьшаем минимальную ширину на средних экранах */
+            .download-buttons a {
+                font-size: 14px; /* Уменьшаем размер шрифта для кнопок на узких экранах */
+                padding: 10px 20px; /* Уменьшаем размер кнопок */
             }
 
-            .component {
-                font-size: 16px; /* Уменьшаем шрифт для более узких экранов */
+            .features-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Уменьшаем минимальную ширину на средних экранах */
             }
         }
 
@@ -303,15 +305,20 @@
             #hero {
                 padding: 40px 0;
             }
+
+            .download-buttons a {
+                padding: 10px 15px; /* Уменьшаем размер кнопок на мобильных устройствах */
+            }
         }
-        
+
         @media (max-width: 480px) {
             #hero h1 {
                 font-size: 28px; /* Дополнительное уменьшение заголовка для маленьких экранов */
             }
 
             .download-buttons a {
-                padding: 10px 20px; /* Уменьшаем размер кнопок */
+                padding: 8px 12px; /* Уменьшаем размер кнопок для маленьких экранов */
+                font-size: 12px; /* Дополнительное уменьшение размера шрифта */
             }
 
             #testimonials h2 {
